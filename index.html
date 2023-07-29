@@ -1,0 +1,243 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <style>
+        * {
+            padding: 0;
+            margin: 0;
+        }
+
+        header {
+            background-color: darkmagenta;
+            color: white;
+            display: flex;
+            justify-content: space-around;
+            align-items: center;
+            padding: 10px 0px;
+
+        }
+
+        .info i {
+            padding: 10px;
+        }
+
+        button {
+            border: none;
+            background-color: darkmagenta;
+            padding: 20px;
+            font-size: 17px;
+            color: white;
+        }
+
+        .lang select {
+            border: none;
+            color: white;
+        }
+
+        .navbar {
+            display: flex;
+            justify-content: space-around;
+            align-items: center;
+        }
+
+        .nav li {
+            display: inline-block;
+            padding: 0px 15px;
+        }
+
+        a {
+            text-decoration: none;
+            color: black;
+
+        }
+        a:hover, a.active{
+            
+            color: #ff0844;
+
+        }
+
+        .logo {
+            margin-top: 10px;
+        }
+
+        .home {
+            background: url(Screenshot_4.jpg)no-repeat center center;
+            background-size: cover;
+            height: 550px;
+
+        }
+
+        .text {
+            padding-top: 15%;
+            padding-left: 140px;
+        }
+
+        .text h3 {
+            font-size: 2.8rem;
+            color: white;
+            padding-bottom: 15px;
+
+        }
+
+        .text p {
+            font-size: 1.3rem;
+            color: white;
+            padding-bottom: 29px;
+
+        }
+
+        input[type="submit"] {
+            padding: 10px 22px;
+            border-radius: 10px;
+            background-color: #2575fc;
+            color: white;
+            letter-spacing: 1px;
+        }
+
+        .services {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+
+
+        }
+
+        .box {
+            width: 50%;
+            height: 36%;
+            margin: 20px;
+            padding: 30px 12px;
+
+        }
+        .box {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-direction: column;
+        }
+
+        .box h3 {
+            text-align: center;
+            font-size: 33px;
+
+        }
+
+        .box p {
+            text-align: center;
+            padding-top: 20px;
+
+        }
+        .box .top1:hover{
+            color: darkgoldenrod;
+        }
+        .box .top1:hover{
+            color: darkgoldenrod;
+        }
+        footer{
+            padding: 20px;
+            text-align: center;
+            background-color: #0ba360;
+            color: white;
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        <div class="lang">
+            <select style="background-color: darkmagenta;">
+                <option value="USA" style="background-color: darkmagenta;" style="">English</option>
+                <option value="UK">British</option>
+                <option value="Canada">Hindi</option>
+                <!-- Add more countries as needed -->
+            </select>
+        </div>
+        <div class="info">
+            <i class="fa fa-phone"> +953 012 3654 896</i>
+            <i class="fa fa-envelope"> SUPPORT@COLORLIB.COM</i>
+            <button>APPOINTMENT</button>
+        </div>
+
+    </header>
+    <div class="navbar">
+        <div class="logo">
+            <img src="tomato.png" alt="">
+        </div>
+        <div class="nav">
+            <ul>
+                <li><a href="#" class="active">Home</a></li>
+                <li><a href="#">About</a></li>
+                <li><a href="#">Press</a></li>
+                <li><a href="#">Blog</a></li>
+                <li><a href="#">Department</a></li>
+                <li><a href="#">Contact US</a></li>
+            </ul>
+        </div>
+        <div class="search">
+            <i class="fa fa-search"></i>
+
+
+        </div>
+    </div>
+    <section class="home">
+        <div class="text">
+            <h3>Growing up your <br>
+                children with our most <br>
+                smart monitization</h3>
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, <br>sed do eiusmod tempor incididunt ut
+                <br>labore et dolore magna aliqua.
+
+            </p>
+            <input type="submit">
+
+        </div>
+    </section>
+    <section class="services">
+        <div class="box">
+
+            <h3> <img src="Screenshot_5.jpg" alt="" style="padding-top: 30px;"> Emergency Services
+            </h3>
+            <p>Lorem ipsum dolor sit amet,  consectetur<br> adipisicing elit,  sed do eiusmod tempor  incididunt <br> ut labore et
+                dolore magna aliqua. Ut enim ad minim veniam.
+
+            </p>
+            <p class="top1">Call Us: 215 - 3695 - 9584</p>
+        </div>
+        <div class="box">
+
+            <h3> <img src="Screenshot_7.jpg" alt="" style="padding-top: 30px;"> Doctors Schedule
+
+            </h3>
+            <p>Lorem ipsum dolor sit amet,  consectetur<br> adipisicing elit,  sed do eiusmod tempor  incididunt <br> ut labore et
+                dolore magna aliqua. Ut enim ad minim veniam.
+
+            </p>
+
+            <p class="top1">Learn More</p>
+        </div>
+        <div class="box">
+
+            <h3> <img src="Screenshot_6.jpg" alt="" style="padding-top: 30px;"> Doctors Schedule
+
+            </h3>
+            <p>Lorem ipsum dolor sit amet,  consectetur<br> adipisicing elit,  sed do eiusmod tempor  incididunt <br> ut labore et
+                dolore magna aliqua. Ut enim ad minim veniam.
+
+            </p>
+
+            <p class="top1">Get Appointment</p>
+        </div>
+
+
+    </section>
+    <footer>
+        Copyright ©2023 All rights reserved | This template is made with  by Farjad
+    </footer>
+</body>
+
+</html>
